@@ -28,7 +28,9 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="pt-br">
-      <body className={`${archivo.className} ${chakra.className}`}>{children}</body>
+      <body className={`${archivo.className} ${chakra.className} bg-black-primary text-white-primary`}>
+        {children}
+      </body>
     </html>
   );
 }
