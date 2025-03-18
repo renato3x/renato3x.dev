@@ -8,4 +8,11 @@
   --color-white-primary: #ffffff;
   --color-white-secondary: #f1f1f1;
   --color-gray: #d9d9d9;
+
+  --font-archivo: var(--archivo);
+  --font-chakra: var(--chakra-petch);
+}
+
+.highlight {
+  @apply text-green-primary;
 }

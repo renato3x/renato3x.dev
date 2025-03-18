@@ -3,15 +3,14 @@ import type { Metadata } from 'next';
 import { Archivo, Chakra_Petch } from 'next/font/google';
 
 const archivo = Archivo({
-  variable: '--font-archivo',
+  variable: '--archivo',
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] 
 });
 
-const chakra = Archivo({
-  variable: '--font-chakra',
+const chakra = Chakra_Petch({
+  variable: '--chakra-petch',
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] 
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 interface RootLayoutProps {
@@ -27,8 +26,8 @@ export default function RootLayout({
   children
 }: RootLayoutProps) {
   return (
-    <html lang="pt-br">
-      <body className={`${archivo.className} ${chakra.className} bg-black-primary text-white-primary`}>
+    <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
+      <body>
         {children}
       </body>
     </html>
