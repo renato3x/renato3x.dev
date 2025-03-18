@@ -27,7 +27,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
-      <body>
+      <body className="h-screen">
         {children}
       </body>
     </html>
