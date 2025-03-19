@@ -1,23 +1,53 @@
 'use client';
 
-import Image from 'next/image';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
-export default function Marquee() {
+interface MarqueeProps {
+  direction?: 'left' | 'right'
+}
+
+export default function Marquee({ direction }: MarqueeProps) {
   const [ marquee, setMarquee ] = useState<string[]>([]);
+  const directionOptions = {
+    left: {
+      initial: { x: '0%' },
+      animate: { x: '-100%' },
+    },
+    right: {
+      initial: { x: '-100%' },
+      animate: { x: '0%' },
+    }
+  }
 
   useEffect(() => {
     fetch('/api/marquee')
     .then((response) => response.json())
-    .then((urls) => setMarquee(urls));
-  });
+    .then((urls) => setMarquee([...urls]));
+  }, []);
 
   return (
-    <div className="w-full overflow-hidden">
-      <div className="flex items-center w-[200%] gap-5 animate-marquee hover:stop-marquee">
-        {marquee.map((url, index) => (
-          <img src={url} alt={url} key={index} className="w-auto h-[28px]"/>
-        ))}
+    <div className="container mx-auto overflow-hidden">
+      <div className="flex dark-gradient">
+        <motion.div
+          {...directionOptions[direction || 'left']}
+          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+          className="flex shrink-0"
+        >
+          {marquee.map((url, index) => (
+            <img src={url} key={index} className="h-[28px] pr-5"/>
+          ))}
+        </motion.div>
+
+        <motion.div
+          {...directionOptions[direction || 'left']}
+          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+          className="flex shrink-0"
+        >
+          {marquee.map((url, index) => (
+            <img src={url} key={index} className="h-[28px] pr-5"/>
+          ))}
+        </motion.div>
       </div>
     </div>
   )

@@ -15,15 +15,17 @@
   --font-chakra: var(--chakra-petch);
 }
 
-.highlight {
-  @apply text-green-primary;
+@utility highlight {
+  @apply text-green-primary
 }
 
-@keyframes marquee {
-  0% { transform: translateX(4%); }
-  100% { transform: translateX(-105%); }
+@utility dark-gradient {
+  mask-image: linear-gradient(
+    to right,
+    #00000000,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    #00000000
+  );
 }
 
-.animate-marquee {
-  animation: marquee 10s linear infinite;
-}
