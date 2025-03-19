@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 interface MarqueeProps {
-  direction?: 'left' | 'right'
+  direction?: 'left' | 'right';
 }
 
 export default function Marquee({ direction }: MarqueeProps) {

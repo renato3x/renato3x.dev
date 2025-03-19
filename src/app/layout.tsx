@@ -18,7 +18,7 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: 'renato3x.dev',
+  title: 'renato3x',
   description: 'Desenvolvimento de Sites e Sistemas Sob Medida - Do Front ao Back, com Qualidade e Rapidez',
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
-      <body className="min-h-screen bg-black-primary text-white-primary">
+      <body className="bg-black-primary text-white-primary">
         {children}
       </body>
     </html>
