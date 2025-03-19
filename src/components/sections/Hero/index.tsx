@@ -1,11 +1,14 @@
 import WhatsAppButton from '@/components/common/WhatsAppButton';
 import Marquee from '@/components/common/Marquee';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="h-[80vh] bg-[url('/images/hero-mobile.svg')] bg-contain bg-top bg-no-repeat flex flex-col">
       <div className="flex-1 flex flex-col justify-start items-center gap-3 pt-15 px-11">
-        <img
+        <Image
+          width={0}
+          height={0}
           src="/images/logo-green.svg"
           alt="renato3x - Logo"
           className="w-[166px] h-[30.5px]"

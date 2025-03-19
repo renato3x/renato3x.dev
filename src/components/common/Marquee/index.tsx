@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface MarqueeProps {
   direction?: 'left' | 'right'
@@ -17,8 +18,8 @@ export default function Marquee({ direction }: MarqueeProps) {
     right: {
       initial: { x: '-100%' },
       animate: { x: '0%' },
-    }
-  }
+    },
+  };
 
   useEffect(() => {
     fetch('/api/marquee')
@@ -35,7 +36,14 @@ export default function Marquee({ direction }: MarqueeProps) {
           className="flex shrink-0"
         >
           {marquee.map((url, index) => (
-            <img src={url} key={index} className="h-[28px] pr-5"/>
+            <Image
+              src={url}
+              key={index}
+              alt={url}
+              width={0}
+              height={0}
+              className="h-[28px] w-auto pr-5"
+            />
           ))}
         </motion.div>
 
@@ -45,10 +53,17 @@ export default function Marquee({ direction }: MarqueeProps) {
           className="flex shrink-0"
         >
           {marquee.map((url, index) => (
-            <img src={url} key={index} className="h-[28px] pr-5"/>
+            <Image
+              src={url}
+              key={index}
+              alt={url}
+              width={0}
+              height={0}
+              className="h-[28px] w-auto pr-5"
+            />
           ))}
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
