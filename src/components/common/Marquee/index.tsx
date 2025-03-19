@@ -14,9 +14,9 @@ export default function Marquee() {
 
   return (
     <div className="w-full overflow-hidden">
-      <div className="flex items-center gap-5 animate-marquee">
+      <div className="flex items-center w-[200%] gap-5 animate-marquee hover:stop-marquee">
         {marquee.map((url, index) => (
-          <img src={url} alt={url} key={index} className="w-auto h-[37px]"/>
+          <img src={url} alt={url} key={index} className="w-auto h-[28px]"/>
         ))}
       </div>
     </div>
