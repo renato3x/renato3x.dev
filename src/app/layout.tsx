@@ -27,7 +27,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
-      <body className="h-screen">
+      <body className="min-h-screen bg-black-primary text-white-primary">
         {children}
       </body>
     </html>
