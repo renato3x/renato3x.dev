@@ -23,7 +23,7 @@ export default function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
       href={`https://wa.me/${whatsApp}?text=${message}`}
       target="_blank"
       className={clsx(
-        `flex justify-center items-center gap-1.5 px-[40px] py-[14px] rounded-[6px] hover:cursor-pointer`,
+        'flex justify-center items-center gap-1.5 px-[40px] py-[14px] rounded-[6px] hover:cursor-pointer',
         highlight ? 'bg-linear-to-r from-green-darker to-green-primary shadow-[0_11px_33px_0] shadow-green-shadow' : 'bg-green-secondary',
       )}
     >
@@ -38,5 +38,5 @@ export default function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
         Solicitar Orçamento
       </span>
     </a>
-  )
+  );
 }

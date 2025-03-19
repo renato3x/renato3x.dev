@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,
 }: RootLayoutProps) {
   return (
     <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
