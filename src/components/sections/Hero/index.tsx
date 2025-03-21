@@ -13,9 +13,9 @@ export default function Hero() {
           alt="renato3x - Logo"
           className="w-[166px] h-[30.5px]"
         />
-        <p className="text-white-secondary text-center font-chakra text-[28px]">
+        <h1 className="text-white-secondary text-center font-chakra text-[28px]">
           Desenvolvimento de Sites e Sistemas Sob Medida – <span className="highlight">Do Front ao Back</span>, com Qualidade e Rapidez
-        </p>
+        </h1>
         <p className="text-white-secondary text-center font-archivo text-[18px]">
           Crie sua presença digital com soluções personalizadas para startups, microempresas e empreendedores.
         </p>
