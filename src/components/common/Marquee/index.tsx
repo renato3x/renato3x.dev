@@ -32,7 +32,7 @@ export default function Marquee({ direction }: MarqueeProps) {
       <div className="flex dark-gradient">
         <motion.div
           {...directionOptions[direction || 'left']}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
           className="flex shrink-0"
         >
           {marquee.map((url, index) => (
@@ -49,7 +49,7 @@ export default function Marquee({ direction }: MarqueeProps) {
 
         <motion.div
           {...directionOptions[direction || 'left']}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
           className="flex shrink-0"
         >
           {marquee.map((url, index) => (
