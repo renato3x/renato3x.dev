@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
   highlight?: boolean;
 }
 
-export default function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
+export function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
   const [ whatsApp, setWhatsApp ] = useState<string>('');
   const message = 'Olá, gostaria de solicitar um orçamento.';
 

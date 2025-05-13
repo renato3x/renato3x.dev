@@ -1,5 +1,5 @@
-import Hero from '@/components/sections/Hero';
-import { WhoAmI } from '@/components/sections/WhoAmI';
+import { Hero } from '@/components/sections/hero';
+import { WhoAmI } from '@/components/sections/who-am-i';
 
 export default function Home() {
   return (

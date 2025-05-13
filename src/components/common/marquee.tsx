@@ -8,7 +8,7 @@ interface MarqueeProps {
   direction?: 'left' | 'right';
 }
 
-export default function Marquee({ direction }: MarqueeProps) {
+export function Marquee({ direction }: MarqueeProps) {
   const [ marquee, setMarquee ] = useState<string[]>([]);
   const directionOptions = {
     left: {

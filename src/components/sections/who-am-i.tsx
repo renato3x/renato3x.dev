@@ -1,6 +1,35 @@
 import Image from "next/image";
+import { Card, CardDescription, CardIcon, CardTitle } from "../common/card";
 
 export function WhoAmI() {
+  const cardsData = [
+    {
+      'icon': '/images/icons/icon-dev.svg',
+      'title': 'Desenvolvimento Completo',
+      'description': 'Frontend e backend para projetos personalizados.'
+    },
+    {
+      'icon': '/images/icons/icon-ecommerce.svg',
+      'title': 'E-commerces e Landing Pages',
+      'description': 'Sites otimizados para vendas e conversão.'
+    },
+    {
+      'icon': '/images/icons/icon-system.svg',
+      'title': 'Sistemas Personalizados',
+      'description': 'Gerenciamento de vendas, estoque, plataformas sociais, e mais.'
+    },
+    {
+      'icon': '/images/icons/icon-support.svg',
+      'title': 'Manutenção e Suporte',
+      'description': 'Cuidado contínuo para sistemas novos ou existentes.'
+    },
+    {
+      'icon': '/images/icons/icon-dev-mobile.svg',
+      'title': 'Aplicativos Mobile',
+      'description': 'Criação de apps com React Native para ampliar sua presença digital.'
+    }
+  ];
+
   return (
     <section className="flex flex-col">
       <div className="flex flex-col px-[35px] py-[40px] gap-[30px]">
@@ -43,7 +72,17 @@ export function WhoAmI() {
           />
         </div>
 
-        <h3 className="font-chakra text-[28px] text-center px-15">O que posso fazer por você</h3>
+        <h3 className="font-chakra text-[28px] text-center px-20">O que posso fazer por você</h3>
+
+        <div className="flex flex-col gap-4">
+          {cardsData.map((card, index) => (
+            <Card key={index}>
+              <CardIcon src={card.icon}/>
+              <CardTitle>{card.title}</CardTitle>
+              <CardDescription>{card.description}</CardDescription>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   )
