@@ -1,5 +1,5 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    WHATSAPP_NUMBER: string;
+    NEXT_PUBLIC_WHATSAPP_NUMBER: string;
   }
 }
