@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-interface WhatsAppButtonProps {
+interface WhatsAppButtonProps extends React.ComponentProps<'a'> {
   highlight?: boolean;
 }
 
-export function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
+export function WhatsAppButton({ highlight , className, ...props}: WhatsAppButtonProps) {
   const [ whatsApp, setWhatsApp ] = useState<string>('');
   const message = 'Olá, gostaria de solicitar um orçamento.';
 
@@ -25,7 +25,9 @@ export function WhatsAppButton({ highlight }: WhatsAppButtonProps) {
       className={clsx(
         'flex justify-center items-center gap-1.5 px-[40px] py-[14px] rounded-[6px] hover:cursor-pointer',
         highlight ? 'bg-linear-to-r from-green-darker to-green-primary shadow-[0_11px_33px_0] shadow-green-shadow' : 'bg-green-secondary',
+        className,
       )}
+      {...props}
     >
       <Image
         src="/images/wpp-icon.svg"
