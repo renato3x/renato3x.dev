@@ -10,26 +10,29 @@
   --color-white-primary: #ffffff;
   --color-white-secondary: #f1f1f1;
   --color-gray: #d9d9d9;
-
   --font-archivo: var(--archivo);
   --font-chakra: var(--chakra-petch);
-}
-
-@utility highlight {
-  @apply text-green-primary
-}
-
-@utility dark-gradient {
-  mask-image: linear-gradient(
-    to right,
-    #00000000,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    #00000000
-  );
-}
+} 
 
 @layer base {
+  body {
+    @apply font-archivo;
+  }
+
+  .highlight {
+    @apply text-green-primary;
+  }
+  
+  .dark-gradient {
+    mask-image: linear-gradient(
+      to right,
+      #00000000,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      #00000000
+    );
+  }
+
   .before\:light-shadow::before {
     box-shadow:
       0px 33px 80px rgba(69, 231, 224, 0.60),

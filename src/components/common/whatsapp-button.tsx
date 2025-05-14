@@ -8,7 +8,7 @@ interface WhatsAppButtonProps extends React.ComponentProps<'a'> {
   highlight?: boolean;
 }
 
-export function WhatsAppButton({ highlight , className, ...props}: WhatsAppButtonProps) {
+export function WhatsAppButton({ highlight, className, ...props}: WhatsAppButtonProps) {
   const [ whatsApp, setWhatsApp ] = useState<string>('');
   const message = 'Olá, gostaria de solicitar um orçamento.';
 

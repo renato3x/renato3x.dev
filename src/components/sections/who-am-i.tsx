@@ -34,7 +34,7 @@ export function WhoAmI() {
     <section className="flex flex-col relative overflow-hidden">
       <div className="absolute top-[700] right-[-800] w-[1000px] h-[1000px] bg-green-primary opacity-30 blur-[150px] rounded-full z-[-1]" />
       <div className="flex flex-col px-[35px] py-[40px] gap-[30px]">
-        <div className="flex flex-col gap-3 font-archivo">
+        <div className="flex flex-col gap-3">
           <h2 className="font-chakra text-[28px]">
             Quem <span className="highlight">sou eu?</span>
           </h2>

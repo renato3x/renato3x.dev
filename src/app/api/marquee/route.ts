@@ -3,7 +3,7 @@ import getConfig from 'next/config';
 import fs from 'node:fs';
 import path from 'node:path';
 
-export async function GET(): Promise<NextResponse<string[]>> {
+export async function GET() {
   const { serverRuntimeConfig } = getConfig();
   const marqueeItemsPath = path.join(serverRuntimeConfig.PROJECT_ROOT, 'public', 'images', 'marquee');
 
