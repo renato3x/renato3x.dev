@@ -13,7 +13,7 @@ export function WhyChooseMe() {
           <WhyChooseMeCards/>
         </div>
       </section>
-      <Marquee/>
+      <Marquee direction="rtl"/>
     </>
   );
 }
@@ -26,8 +26,9 @@ function WhyChooseMeCards() {
           <CardHeader>
             <Image
               src="/images/logo-icon.svg"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
+              className="w-[30px] h-[30px]"
               alt="renato3x - Logo Icon"
             />
             <CardTitle className="text-[26px] font-chakra">Tecnologias Modernas</CardTitle>
@@ -41,8 +42,9 @@ function WhyChooseMeCards() {
           <CardHeader>
             <Image
               src="/images/logo-icon.svg"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
+              className="w-[30px] h-[30px]"
               alt="renato3x - Logo Icon"
             />
             <CardTitle className="text-[26px] font-chakra">Soluções Seguras</CardTitle>
@@ -56,8 +58,9 @@ function WhyChooseMeCards() {
           <CardHeader>
             <Image
               src="/images/logo-icon.svg"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
+              className="w-[30px] h-[30px]"
               alt="renato3x - Logo Icon"
             />
             <CardTitle className="text-[26px] font-chakra">Prazo e Transparência</CardTitle>
@@ -73,8 +76,9 @@ function WhyChooseMeCards() {
           <CardHeader>
             <Image
               src="/images/logo-icon.svg"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
+              className="w-[30px] h-[30px]"
               alt="renato3x - Logo Icon"
             />
             <CardTitle className="text-[26px] font-chakra">Código 100% seu</CardTitle>
@@ -88,8 +92,9 @@ function WhyChooseMeCards() {
           <CardHeader>
             <Image
               src="/images/logo-icon.svg"
-              width={30}
-              height={30}
+              width={0}
+              height={0}
+              className="w-[30px] h-[30px]"
               alt="renato3x - Logo Icon"
             />
             <CardTitle className="text-[26px] font-chakra">Desconto Exclusivo</CardTitle>

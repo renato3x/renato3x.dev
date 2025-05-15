@@ -59,9 +59,10 @@ function Services() {
           <CardHeader>
             <Image
               src="/images/icons/icon-dev.svg"
-              width={34}
-              height={34}
+              width={0}
+              height={0}
               alt="Icon dev"
+              className="w-[34px] h-[34px]"
             />
             <CardTitle className="text-[26px] font-chakra max-w-50">Desenvolvimento Completo</CardTitle>
           </CardHeader>
@@ -74,9 +75,10 @@ function Services() {
           <CardHeader>
             <Image
               src="/images/icons/icon-ecommerce.svg"
-              width={34}
-              height={34}
+              width={0}
+              height={0}
               alt="Icon ecommerce"
+              className="w-[34px] h-[34px]"
             />
             <CardTitle className="text-[26px] font-chakra max-w-50">E-commerces e Landing Pages</CardTitle>
           </CardHeader>
@@ -89,9 +91,10 @@ function Services() {
           <CardHeader>
             <Image
               src="/images/icons/icon-system.svg"
-              width={34}
-              height={34}
+              width={0}
+              height={0}
               alt="Icon system"
+              className="w-[34px] h-[34px]"
             />
             <CardTitle className="text-[26px] font-chakra max-w-50">Sistemas Personalizados</CardTitle>
           </CardHeader>
@@ -106,9 +109,10 @@ function Services() {
           <CardHeader>
             <Image
               src="/images/icons/icon-support.svg"
-              width={34}
-              height={34}
+              width={0}
+              height={0}
               alt="Icon support"
+              className="w-[34px] h-[34px]"
             />
             <CardTitle className="text-[26px] font-chakra max-w-50">Manutenção e Suporte</CardTitle>
           </CardHeader>
@@ -121,9 +125,10 @@ function Services() {
           <CardHeader>
             <Image
               src="/images/icons/icon-dev-mobile.svg"
-              width={34}
-              height={34}
+              width={0}
+              height={0}
               alt="Icon mobile"
+              className="w-[34px] h-[34px]"
             />
             <CardTitle className="text-[26px] font-chakra max-w-50">Aplicativos Mobile</CardTitle>
           </CardHeader>

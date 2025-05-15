@@ -5,8 +5,22 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-export function Marquee({ className, ...props }: React.ComponentProps<'div'>) {
+interface MarqueeProps extends React.ComponentProps<'div'> {
+  direction?: 'rtl' | 'ltr';
+}
+
+export function Marquee({ className, direction, ...props }: MarqueeProps) {
   const [ marqueeImages, setMarqueeImages ] = useState<string[]>([]);
+  const directionOptions = {
+    rtl: {
+      initial: { x: '0%' },
+      animate: { x: '-100%' },
+    },
+    ltr: {
+      initial: { x: '-100%' },
+      animate: { x: '0%' },
+    }
+  };
 
   useEffect(() => {
     fetch('/api/marquee')
@@ -26,10 +40,9 @@ export function Marquee({ className, ...props }: React.ComponentProps<'div'>) {
         {new Array(3).fill(0).map((_, key) => (
           <motion.div
             key={key}
-            initial={{ x: '0%' }}
-            animate={{ x: '-100%' }}
             transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
             className="flex shrink-0"
+            {...directionOptions[direction || 'ltr']}
           >
             {marqueeImages.map((url, index) => (
               <Image
