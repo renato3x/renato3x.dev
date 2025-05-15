@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { WhatsAppButton } from '../common/whatsapp-button';
+import { WhatsAppButton } from '@/components/common/whatsapp-button';
 
 export function AlreadyHaveADesign() {
   return (

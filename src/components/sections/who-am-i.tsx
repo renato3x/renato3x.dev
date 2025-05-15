@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '../common/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/common/card';
 
 export function WhoAmI() {
   return (
