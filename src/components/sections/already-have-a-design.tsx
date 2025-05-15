@@ -14,26 +14,26 @@ export function AlreadyHaveADesign() {
             alt="Divider top black"
           />
         </div>
-        <div className="text-black-primary h-full py-[50px] px-[30px] flex flex-col gap-5">
-          <div className="flex flex-col gap-5 md:px-[100px]">
-            <h2 className="text-[28px] font-chakra leading-[1.3]">
+        <div className="text-black-primary w-full py-[50px] px-[30px] flex flex-col gap-5 md:flex-row md:justify-center md:py-[80px]">
+          <div className="flex flex-col gap-5 md:px-[100px] md:max-w-[850px]">
+            <h2 className="text-[28px] font-chakra leading-[1.3] md:text-[48px]">
               Já tem um Design?<br/>
               <span className="font-semibold highlight">Vamos começar!</span>
             </h2>
 
-            <p>
+            <p className="md:text-[24px]">
               Para que o desenvolvimento do seu site ou aplicativo seja ágil,{' '}
               <strong>é importante que você envie um design pronto.</strong>{' '}
               Caso ainda não tenha, podemos cuidar disso para você!
             </p>
 
-            <p>
+            <p className="md:text-[24px]">
               Assim que o orçamento for aprovado, entrarei em contato com designers{' '}
               de confiança, que irão trabalhar para transformar sua ideia em um layout{' '}
               visual claro e profissional.
             </p>
 
-            <p>
+            <p className="md:text-[24px]">
               Isso garantirá que o desenvolvimento do projeto seja eficiente e alinhado às suas expectativas.
             </p>
           </div>
@@ -43,7 +43,7 @@ export function AlreadyHaveADesign() {
               alt="Macbook image"
               width={0}
               height={0}
-              className="w-[420px]"
+              className="min-w-[420px] md:w-[730px]"
             />
           </div>
         </div>
@@ -57,15 +57,15 @@ export function AlreadyHaveADesign() {
           />
         </div>
       </section>
-      <section className="bg-green-primary py-[40px] px-[30px] text-black-primary flex flex-col gap-[20px]">
-        <div className="flex flex-col gap-[8px]">
-          <p className="font-semibold font-chakra text-center">Observação Importante:</p>
-          <p className="text-center leading-5">
+      <section className="bg-green-primary py-[40px] px-[30px] text-black-primary flex flex-col gap-[20px] items-center md:flex-row md:justify-around md:items-end">
+        <div className="flex flex-col gap-[8px] md:max-w-[500px]">
+          <p className="font-semibold font-chakra text-center md:text-start">Observação Importante:</p>
+          <p className="text-center leading-5 md:text-start">
             O custo do design será incluído no orçamento final, e os prazos poderão ser ajustados para acomodar a criação do layout.
           </p>
         </div>
         <div className="px-[40px]">
-          <WhatsAppButton className="text-white-primary"/>
+          <WhatsAppButton className="text-white-primary md:w-[350px]"/>
         </div>
       </section>
     </>

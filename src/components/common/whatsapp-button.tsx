@@ -22,8 +22,9 @@ export function WhatsAppButton({ highlight, className, ...props}: WhatsAppButton
       <Image
         src="/images/wpp-icon.svg"
         alt="WhatsApp Icon"
-        width={15}
-        height={15}
+        width={0}
+        height={0}
+        className="w-[15px] h-[15px]"
       />
 
       <span className="font-chakra">
