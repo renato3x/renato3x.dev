@@ -6,11 +6,9 @@ interface WhatsAppButtonProps extends React.ComponentProps<'a'> {
 }
 
 export function WhatsAppButton({ highlight, className, ...props}: WhatsAppButtonProps) {
-  const message = 'Olá, gostaria de solicitar um orçamento.';
-
   return (
     <a
-      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${message}`}
+      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE}`}
       target="_blank"
       className={cn(
         'flex justify-center items-center gap-1.5 px-[40px] py-[14px] rounded-[6px] hover:cursor-pointer',

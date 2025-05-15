@@ -1,5 +1,6 @@
 import { AlreadyHaveADesign } from '@/components/sections/already-have-a-design';
 import { Hero } from '@/components/sections/hero';
+import { ReadyToStart } from '@/components/sections/ready-to-start';
 import { TransparentInvestment } from '@/components/sections/transparent-investment';
 import { WhoAmI } from '@/components/sections/who-am-i';
 import { WhyChooseMe } from '@/components/sections/why-choose-me';
@@ -12,6 +13,7 @@ export default function Home() {
       <AlreadyHaveADesign/>
       <WhyChooseMe/>
       <TransparentInvestment/>
+      <ReadyToStart/>
     </main>
   );
 }
