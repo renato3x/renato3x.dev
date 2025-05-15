@@ -10,12 +10,12 @@ export function AlreadyHaveADesign() {
             src="/images/divider-top-black.svg"
             width={0}
             height={0}
-            className="w-auto"
+            className="w-auto h-auto lg:w-[600px] lg:h-[40px]"
             alt="Divider top black"
           />
         </div>
-        <div className="text-black-primary py-[50px] px-[30px] flex flex-col items-center lg:py-[100px]">
-          <div className="flex flex-col lg:flex-row lg:max-w-[1000px] gap-10">
+        <div className="text-black-primary py-[50px] px-[30px] flex flex-col items-center md:py-[100px]">
+          <div className="flex flex-col md:flex-row lg:max-w-[1000px] gap-10">
             <div className="flex flex-col gap-6">
               <h2 className="font-chakra text-[28px] leading-[1.3] lg:text-[48px]">
                 Já tem um Design?<br/>
@@ -45,7 +45,7 @@ export function AlreadyHaveADesign() {
                 alt="Macbook image"
                 width={0}
                 height={0}
-                className="min-w-[300px] lg:min-w-[450px]"
+                className="min-w-[300px] md:min-w-[400px] lg:min-w-[500px]"
               />
             </div>
           </div>
@@ -55,26 +55,29 @@ export function AlreadyHaveADesign() {
             src="/images/divider-bottom-green.svg"
             width={0}
             height={0}
-            className="w-auto"
+            className="w-auto h-auto lg:w-[600px] lg:h-[40px]"
             alt="Divider bottom green"
           />
         </div>
       </section>
+      <Observation/>
     </>
   );
 }
 
 function Observation() {
   return (
-    <section className="bg-green-primary py-[40px] px-[30px] text-black-primary flex flex-col gap-[20px] items-center lg:flex-row lg:justify-around lg:items-end">
-      <div className="flex flex-col gap-[8px] lg:max-w-[500px]">
-        <p className="font-semibold font-chakra text-center lg:text-start">Observação Importante:</p>
-        <p className="text-center leading-5 lg:text-start">
-          O custo do design será incluído no orçamento final, e os prazos poderão ser ajustados para acomodar a criação do layout.
-        </p>
-      </div>
-      <div className="px-[40px]">
-        <WhatsAppButton className="text-white-primary lg:w-[350px]"/>
+    <section className="bg-green-primary text-black-primary py-[50px] px-[30px] flex flex-col items-center">
+      <div className="flex flex-col gap-4 lg:flex-row lg:w-full lg:justify-around">
+        <div className="flex flex-col gap-1">
+          <div className="font-semibold font-chakra text-center lg:text-start">Observação Importante:</div>
+          <p className="text-center md:max-w-[500px] lg:text-start">
+            O custo do design será incluído no orçamento final, e os prazos poderão ser ajustados para acomodar a criação do layout.
+          </p>
+        </div>
+        <div className="flex justify-center lg:items-center">
+          <WhatsAppButton className="text-white-primary"/>
+        </div>
       </div>
     </section>
   );
