@@ -14,35 +14,39 @@
   --font-chakra: var(--chakra-petch);
 } 
 
+@utility highlight {
+  @apply text-green-primary;
+}
+
+@utility dark-gradient {
+  mask-image: linear-gradient(
+    to right,
+    #00000000,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    #00000000
+  );
+}
+
+@utility light-shadow {
+  box-shadow:
+    0px 33px 80px rgba(69, 231, 224, 0.60),
+    0px 16px 40px rgba(69, 231, 224, 0.64),
+    0px 10px 24px rgba(69, 231, 224, 0.48),
+    0px 12px 24px rgba(69, 231, 224, 0.56),
+    0px 4.2px 10.5px rgba(69, 231, 224, 0.30),
+    0px 2.5px 6.25px rgba(69, 231, 224, 0.25),
+    0px 1.5px 3.6px rgba(69, 231, 224, 0.20),
+    0px 0.66px 1.6px rgba(69, 231, 224, 0.14);
+}
+
+@utility lightbar {
+  @apply relative before:block before:w-[71px] before:h-[6px] before:bg-green-primary before:absolute before:right-10 before:top-[-2] before:light-shadow;
+}
+
 @layer base {
   body {
     @apply font-archivo;
-  }
-
-  .highlight {
-    @apply text-green-primary;
-  }
-  
-  .dark-gradient {
-    mask-image: linear-gradient(
-      to right,
-      #00000000,
-      rgba(0, 0, 0, 1) 20%,
-      rgba(0, 0, 0, 1) 80%,
-      #00000000
-    );
-  }
-
-  .before\:light-shadow::before {
-    box-shadow:
-      0px 33px 80px rgba(69, 231, 224, 0.60),
-      0px 16px 40px rgba(69, 231, 224, 0.64),
-      0px 10px 24px rgba(69, 231, 224, 0.48),
-      0px 12px 24px rgba(69, 231, 224, 0.56),
-      0px 4.2px 10.5px rgba(69, 231, 224, 0.30),
-      0px 2.5px 6.25px rgba(69, 231, 224, 0.25),
-      0px 1.5px 3.6px rgba(69, 231, 224, 0.20),
-      0px 0.66px 1.6px rgba(69, 231, 224, 0.14);
   }
 }
 

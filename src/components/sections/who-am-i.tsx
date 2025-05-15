@@ -1,35 +1,7 @@
 import Image from 'next/image';
-import { Card, CardDescription, CardIcon, CardTitle } from '../common/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../common/card';
 
 export function WhoAmI() {
-  const cardsData = [
-    {
-      'icon': '/images/icons/icon-dev.svg',
-      'title': 'Desenvolvimento Completo',
-      'description': 'Frontend e backend para projetos personalizados.',
-    },
-    {
-      'icon': '/images/icons/icon-ecommerce.svg',
-      'title': 'E-commerces e Landing Pages',
-      'description': 'Sites otimizados para vendas e conversão.',
-    },
-    {
-      'icon': '/images/icons/icon-system.svg',
-      'title': 'Sistemas Personalizados',
-      'description': 'Gerenciamento de vendas, estoque, plataformas sociais, e mais.',
-    },
-    {
-      'icon': '/images/icons/icon-support.svg',
-      'title': 'Manutenção e Suporte',
-      'description': 'Cuidado contínuo para sistemas novos ou existentes.',
-    },
-    {
-      'icon': '/images/icons/icon-dev-mobile.svg',
-      'title': 'Aplicativos Mobile',
-      'description': 'Criação de apps com React Native para ampliar sua presença digital.',
-    },
-  ];
-
   return (
     <section className="flex flex-col px-[35px] py-[40px] gap-[30px] md:py-[100px] md:gap-[100px]">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-center md:gap-30">
@@ -83,48 +55,84 @@ function Services() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-4 md:flex-row md:justify-center">
-        <Card>  
-          <CardIcon src="/images/icons/icon-dev.svg"/>
-          <CardTitle>Desenvolvimento Completo</CardTitle>
-          <CardDescription>
-            Frontend e backend para projetos personalizados.
-          </CardDescription>
+        <Card className="lightbar min-h-[240px]">
+          <CardHeader>
+            <Image
+              src="/images/icons/icon-dev.svg"
+              width={34}
+              height={34}
+              alt="Icon dev"
+            />
+            <CardTitle className="text-[26px] font-chakra max-w-50">Desenvolvimento Completo</CardTitle>
+          </CardHeader>
+          <CardContent className="text-[18px]">
+            <p className="max-w-80">Frontend e backend para projetos personalizados.</p>
+          </CardContent>
         </Card>
 
-        <Card>
-          <CardIcon src="/images/icons/icon-ecommerce.svg"/>
-          <CardTitle>E-commerces e Landing Pages</CardTitle>
-          <CardDescription>
-            Sites otimizados para vendas e conversão.
-          </CardDescription>
+        <Card className="lightbar min-h-[240px]">
+          <CardHeader>
+            <Image
+              src="/images/icons/icon-ecommerce.svg"
+              width={34}
+              height={34}
+              alt="Icon ecommerce"
+            />
+            <CardTitle className="text-[26px] font-chakra max-w-50">E-commerces e Landing Pages</CardTitle>
+          </CardHeader>
+          <CardContent className="text-[18px]">
+            <p className="max-w-80">Sites otimizados para vendas e conversão.</p>
+          </CardContent>
         </Card>
 
-        <Card>
-          <CardIcon src="/images/icons/icon-system.svg"/>
-          <CardTitle>Sistemas Personalizados</CardTitle>
-          <CardDescription>
-            Gerenciamento de vendas, estoque, plataformas sociais, e mais.
-          </CardDescription>
+        <Card className="lightbar min-h-[240px]">
+          <CardHeader>
+            <Image
+              src="/images/icons/icon-system.svg"
+              width={34}
+              height={34}
+              alt="Icon system"
+            />
+            <CardTitle className="text-[26px] font-chakra max-w-50">Sistemas Personalizados</CardTitle>
+          </CardHeader>
+          <CardContent className="text-[18px]">
+            <p className="max-w-80">Gerenciamento de vendas, estoque, plataformas sociais, e mais.</p>
+          </CardContent>
         </Card>
       </div>
 
       <div className="flex flex-col gap-4 md:flex-row md:justify-center">
-        <Card>
-          <CardIcon src="/images/icons/icon-support.svg"/>
-          <CardTitle>Manutenção e Suporte</CardTitle>
-          <CardDescription>
-            Cuidado contínuo para sistemas novos ou existentes.
-          </CardDescription>
+        <Card className="lightbar min-h-[240px]">
+          <CardHeader>
+            <Image
+              src="/images/icons/icon-support.svg"
+              width={34}
+              height={34}
+              alt="Icon support"
+            />
+            <CardTitle className="text-[26px] font-chakra max-w-50">Manutenção e Suporte</CardTitle>
+          </CardHeader>
+          <CardContent className="text-[18px]">
+            <p className="max-w-80">Cuidado contínuo para sistemas novos ou existentes.</p>
+          </CardContent>
         </Card>
 
-        <Card>
-          <CardIcon src="/images/icons/icon-dev-mobile.svg"/>
-          <CardTitle>Aplicativos Mobile</CardTitle>
-          <CardDescription>
-            Criação de apps com React Native para ampliar sua presença digital.
-          </CardDescription>
+        <Card className="lightbar min-h-[240px]">
+          <CardHeader>
+            <Image
+              src="/images/icons/icon-dev-mobile.svg"
+              width={34}
+              height={34}
+              alt="Icon mobile"
+            />
+            <CardTitle className="text-[26px] font-chakra max-w-50">Aplicativos Mobile</CardTitle>
+          </CardHeader>
+          <CardContent className="text-[18px]">
+            <p className="max-w-80">Criação de apps com React Native para ampliar sua presença digital.</p>
+          </CardContent>
         </Card>
       </div>
     </div>
   );
 }
+
