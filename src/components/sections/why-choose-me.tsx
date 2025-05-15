@@ -6,7 +6,7 @@ export function WhyChooseMe() {
   return (
     <>
       <section className="flex flex-col px-[35px] py-[40px] items-center md:py-[60px]">
-        <div className="flex flex-col gap-10 md:max-w-[900px] md:gap-5">
+        <div className="flex flex-col gap-10 md:max-w-[1000px] md:gap-5">
           <h2 className="font-chakra text-[28px] md:text-[48px] max-w-[200px] md:max-w-none">
             Por que me escolher?
           </h2>
