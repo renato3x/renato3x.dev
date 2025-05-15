@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function TransparentInvestment() {
   return (
-    <section className="relative">
+    <section className="relative bg-[url('/images/transparent-investment-bg.svg')] bg-no-repeat bg-cover bg-top-right">
       <div className="flex px-[35px] py-[40px] justify-center md:py-[100px]">
         <div className="flex flex-col gap-[50px] grow lg:flex-row lg:max-w-[1000px] items-center justify-center lg:gap-[100px]">
           <div className="flex flex-col gap-10">
