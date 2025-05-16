@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/common/card';
+import { cn } from '@/lib/utils';
+
+// ellipse-light-effect-bg-1-desktop.svg
 
 export function WhoAmI() {
   return (
-    <section className="flex px-[35px] py-[40px] lg:py-[100px] justify-center" id="about-me">
+    <section
+      className={cn(
+        'flex px-[35px] py-[40px] lg:py-[100px] justify-center',
+        'bg-[url("/images/ellipse-light-effect-bg-1.svg")] bg-no-repeat bg-right lg:bg-right-top',
+        'lg:bg-[url("/images/ellipse-light-effect-bg-1-desktop.svg")]'
+      )}
+      id="about-me"
+    >
       <div className="flex flex-col lg:max-w-[1000px] gap-[50px] lg:gap-[100px]">
         <div className="flex flex-col gap-10 lg:flex-row">
           <div className="flex flex-col gap-6">
@@ -49,7 +59,7 @@ export function WhoAmI() {
             />
           </div>
 
-          <h3 className="font-chakra text-[28px] text-center px-20 lg:text-[48px]" id="services">O que posso fazer por você</h3>
+          <h3 className="font-chakra text-[28px] text-center px-15 lg:text-[48px]" id="services">O que posso fazer por você</h3>
           <Services/>
         </div>
       </div>
