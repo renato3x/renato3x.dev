@@ -5,11 +5,11 @@ export function Footer() {
     <footer className="flex flex-col relative items-center">
       <section className="bg-green-primary text-black-primary pt-[60px] pb-[30px] items-center flex flex-col w-full">
         <div className="absolute top-[-1] flex justify-center w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" width="300" height="20" viewBox="0 0 300 20" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 20" fill="none" className="w-[300px] h-[20px] lg:h-[40px] lg:w-[600px]">
             <path d="M15.1167 20C20.6743 20 284.883 20 284.883 20L300 0H0C0 0 13 17.8833 15.1167 20Z" fill="#f1f1f1"/>
           </svg>
         </div>
-        <section className="flex flex-col px-[30px] gap-5 w-full lg:max-w-[1000px] lg:flex-row lg:items-center lg:justify-between">
+        <section className="flex flex-col px-[30px] gap-5 w-full lg:max-w-[1000px] lg:py-[20px] lg:flex-row lg:items-center lg:justify-between">
           <ul className="flex flex-col gap-1 lg:flex-row lg:gap-10">
             <li className="font-semibold lg:text-[18px]">
               <a href="#about-me">Sobre mim</a>
