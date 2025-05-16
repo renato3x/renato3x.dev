@@ -26,7 +26,7 @@ export default function RootLayout({
   children,
 }: RootLayoutProps) {
   return (
-    <html lang="pt-br" className={`${archivo.variable} ${chakra.variable}`}>
+    <html lang="pt-br" className={`${archivo.variable} ${chakra.variable} scroll-smooth`}>
       <body className="bg-black-primary text-white-primary">
         {children}
       </body>

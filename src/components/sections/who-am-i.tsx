@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/common/ca
 
 export function WhoAmI() {
   return (
-    <section className="flex px-[35px] py-[40px] md:py-[100px] justify-center">
+    <section className="flex px-[35px] py-[40px] md:py-[100px] justify-center" id="about-me">
       <div className="flex flex-col md:max-w-[1000px] gap-[50px] md:gap-[100px]">
         <div className="flex flex-col gap-10 md:flex-row">
           <div className="flex flex-col gap-6">
@@ -49,7 +49,7 @@ export function WhoAmI() {
             />
           </div>
 
-          <h3 className="font-chakra text-[28px] text-center px-20 md:text-[48px]">O que posso fazer por você</h3>
+          <h3 className="font-chakra text-[28px] text-center px-20 md:text-[48px]" id="services">O que posso fazer por você</h3>
           <Services/>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { AlreadyHaveADesign } from '@/components/sections/already-have-a-design';
+import { Footer } from '@/components/sections/footer';
 import { Hero } from '@/components/sections/hero';
 import { ReadyToStart } from '@/components/sections/ready-to-start';
 import { TransparentInvestment } from '@/components/sections/transparent-investment';
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyChooseMe/>
       <TransparentInvestment/>
       <ReadyToStart/>
+      <Footer/>
     </main>
   );
 }

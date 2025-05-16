@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function ReadyToStart() {
   return (
-    <section className="flex p-[30px] bg-white-secondary text-black-primary justify-center">
+    <section className="flex py-[60px] px-[30px] bg-white-secondary text-black-primary justify-center" id="contact">
       <div className="flex flex-col gap-4 items-center grow">
         <h2 className="text-[30px] font-chakra text-center font-[500]">Pronto Para Começar?</h2>
         <p className="text-center text-[18px] md:max-w-[450px]">
