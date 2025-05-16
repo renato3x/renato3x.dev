@@ -17,7 +17,7 @@ export function AlreadyHaveADesign() {
         <div className="text-black-primary py-[50px] px-[30px] flex flex-col items-center lg:py-[100px]">
           <div className="flex flex-col lg:flex-row lg:max-w-[1000px] gap-10">
             <div className="flex flex-col gap-6">
-              <h2 className="font-chakra text-[28px] leading-[1.3] lg:text-[48px]">
+              <h2 className="font-chakra text-[28px] leading-[1.3] md:text-[48px]">
                 Já tem um Design?<br/>
                 <span className="font-semibold highlight">Vamos começar!</span>
               </h2>

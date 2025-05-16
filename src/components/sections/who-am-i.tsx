@@ -7,7 +7,7 @@ export function WhoAmI() {
       <div className="flex flex-col lg:max-w-[1000px] gap-[50px] lg:gap-[100px]">
         <div className="flex flex-col gap-10 lg:flex-row">
           <div className="flex flex-col gap-6">
-            <h2 className="font-chakra text-[28px] lg:text-[48px]">
+            <h2 className="font-chakra text-[28px] md:text-[48px]">
               Quem <span className="highlight">sou eu?</span>
             </h2>
 
@@ -45,7 +45,7 @@ export function WhoAmI() {
               alt="Services"
               width={0}
               height={0}
-              className="w-[120px] lg:w-[200px]"
+              className="w-[120px] md:w-[200px]"
             />
           </div>
 
