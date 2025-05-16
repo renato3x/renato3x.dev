@@ -10,7 +10,7 @@ export function WhoAmI() {
       className={cn(
         'flex px-[35px] py-[40px] lg:py-[100px] justify-center',
         'bg-[url("/images/ellipse-light-effect-bg-1.svg")] bg-no-repeat bg-right lg:bg-right-top',
-        'lg:bg-[url("/images/ellipse-light-effect-bg-1-desktop.svg")]'
+        'lg:bg-[url("/images/ellipse-light-effect-bg-1-desktop.svg")]',
       )}
       id="about-me"
     >

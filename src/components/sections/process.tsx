@@ -88,7 +88,7 @@ function Scroll({ parent }: ScrollProps) {
         },
       },
     );
-  }, [horizontalProgressRef]);
+  }, [horizontalProgressRef, parent]);
 
   return (
     <>
@@ -96,7 +96,7 @@ function Scroll({ parent }: ScrollProps) {
         className={cn(
           'w-[2px] h-full bg-black-secondary',
           'flex justify-center relative overflow-hidden',
-          'lg:hidden'
+          'lg:hidden',
         )}
       >
         <div
@@ -110,7 +110,7 @@ function Scroll({ parent }: ScrollProps) {
         className={cn(
           'h-[4px] w-full bg-black-secondary',
           'flex flex-col justify-center relative overflow-hidden',
-          'hidden lg:block'
+          'hidden lg:block',
         )}
       >
         <div
