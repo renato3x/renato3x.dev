@@ -1,6 +1,6 @@
-import { Marquee } from "@/components/common/marquee";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/common/card";
-import Image from "next/image";
+import { Marquee } from '@/components/common/marquee';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/common/card';
+import Image from 'next/image';
 
 export function WhyChooseMe() {
   return (

@@ -19,7 +19,7 @@ export function Marquee({ className, direction, ...props }: MarqueeProps) {
     ltr: {
       initial: { x: '-100%' },
       animate: { x: '0%' },
-    }
+    },
   };
 
   useEffect(() => {

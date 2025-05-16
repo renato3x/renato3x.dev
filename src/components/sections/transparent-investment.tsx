@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { Card, CardContent, CardHeader } from "@/components/common/card";
-import { WhatsAppButton } from "../common/whatsapp-button";
-import { cn } from "@/lib/utils";
+import Image from 'next/image';
+import { Card, CardContent, CardHeader } from '@/components/common/card';
+import { WhatsAppButton } from '../common/whatsapp-button';
+import { cn } from '@/lib/utils';
 
 export function TransparentInvestment() {
   return (
@@ -22,7 +22,7 @@ export function TransparentInvestment() {
 
               <div
                 style={{
-                  background: 'linear-gradient(90deg, #00A36E 0%, #00D992 100%)'
+                  background: 'linear-gradient(90deg, #00A36E 0%, #00D992 100%)',
                 }}
                 className={cn(
                   'bg-green-primary flex justify-center items-center',

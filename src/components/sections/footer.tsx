@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -74,5 +74,5 @@ export function Footer() {
         </section>
       </section>
     </footer>
-  )
+  );
 }

@@ -14,7 +14,7 @@ export function ReadyToStart() {
           className={cn(
             'flex flex-col p-[20px] bg-green-primary gap-[10px] rounded-[16px]',
             'w-full md:flex-row md:justify-around lg:max-w-[750px]',
-            'shadow-[0px_70px_28px_rgba(0,0,0,0.01),_0px_40px_24px_rgba(0,0,0,0.05),_0px_18px_18px_rgba(0,0,0,0.09),_0px_4px_10px_rgba(0,0,0,0.10)]'
+            'shadow-[0px_70px_28px_rgba(0,0,0,0.01),_0px_40px_24px_rgba(0,0,0,0.05),_0px_18px_18px_rgba(0,0,0,0.09),_0px_4px_10px_rgba(0,0,0,0.10)]',
           )}
         >
           <div className="flex gap-3 justify-center items-center">
@@ -62,5 +62,5 @@ export function ReadyToStart() {
         </div>
       </div>
     </section>
-  )
+  );
 }
