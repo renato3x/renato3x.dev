@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
@@ -10,7 +9,6 @@ interface MarqueeProps extends React.ComponentProps<'div'> {
 }
 
 export function Marquee({ className, direction, ...props }: MarqueeProps) {
-  const [ marqueeImages, setMarqueeImages ] = useState<string[]>([]);
   const directionOptions = {
     rtl: {
       initial: { x: '0%' },
@@ -22,11 +20,12 @@ export function Marquee({ className, direction, ...props }: MarqueeProps) {
     },
   };
 
-  useEffect(() => {
-    fetch('/api/marquee')
-    .then((response) => response.json())
-    .then((urls) => setMarqueeImages([...urls]));
-  }, []);
+  const marqueeImages = new Array<string>(+process.env.NEXT_PUBLIC_MARQUEE_LENGTH)
+    .fill('')
+    .map((_, index) => {
+      const item = index + 1;
+      return `/images/marquee/item-${item < 10 ? `0${item}` : item}.svg`;
+    });
 
   return (
     <div
