@@ -5,7 +5,12 @@ import path from 'node:path';
 
 export async function GET() {
   const { serverRuntimeConfig } = getConfig();
-  const marqueeItemsPath = path.join(serverRuntimeConfig.PROJECT_ROOT, 'public', 'images', 'marquee');
+
+  const isDevelopment = process.env.NODE_ENV === 'development'
+  const marqueeItemsPath = path.join(
+    serverRuntimeConfig.PROJECT_ROOT,
+    ...(isDevelopment ? ['public', 'images', 'marquee'] : ['images', 'marquee']),
+  );
 
   const marqueeFiles = fs.readdirSync(marqueeItemsPath)
     .map((filename) => `/images/marquee/${filename}`);
