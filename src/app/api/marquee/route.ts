@@ -6,7 +6,7 @@ import path from 'node:path';
 export async function GET() {
   const { serverRuntimeConfig } = getConfig();
 
-  const isDevelopment = process.env.NODE_ENV === 'development'
+  const isDevelopment = process.env.NODE_ENV === 'development';
   const marqueeItemsPath = path.join(
     serverRuntimeConfig.PROJECT_ROOT,
     ...(isDevelopment ? ['public', 'images', 'marquee'] : ['images', 'marquee']),
