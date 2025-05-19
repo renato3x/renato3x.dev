@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Archivo, Chakra_Petch } from 'next/font/google';
+import Script from 'next/script';
 
 const archivo = Archivo({
   variable: '--archivo',
@@ -164,7 +165,35 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="pt-br" className={`${archivo.variable} ${chakra.variable} scroll-smooth`}>
+      <head>
+        <Script
+          id="facebook-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1002010778754177');
+              fbq('track', 'PageView');
+            `
+          }}
+        />
+      </head>
       <body className="bg-black-primary text-white-primary">
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=1002010778754177&ev=PageView&noscript=1"
+          />
+        </noscript>
         {children}
       </body>
     </html>
