@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Archivo, Chakra_Petch } from 'next/font/google';
+import Image from 'next/image';
 import Script from 'next/script';
 
 const archivo = Archivo({
@@ -181,17 +182,18 @@ export default function RootLayout({
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '1002010778754177');
               fbq('track', 'PageView');
-            `
+            `,
           }}
         />
       </head>
       <body className="bg-black-primary text-white-primary">
         <noscript>
-          <img
+          <Image
             height="1"
             width="1"
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=1002010778754177&ev=PageView&noscript=1"
+            alt=""
           />
         </noscript>
         {children}
